@@ -1,2 +1,2 @@
-# BR-PROMO-ES-
+# BR-PROMO
 PROMOÇÕES BR!
