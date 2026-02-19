@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BR Promoções</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🔥 BR Promoções</h1>
+    <button onclick="openAdmin()">Admin</button>
+</header>
+
+<section class="products" id="products"></section>
+
+<div class="cart">
+    <h3>Carrinho (<span id="cartCount">0</span>)</h3>
+    <button onclick="finalizarCompra()">Finalizar pelo WhatsApp</button>
+</div>
+
+<!-- ADMIN -->
+<div class="adminPanel" id="adminPanel">
+    <div class="adminBox">
+        <h2>Painel Admin</h2>
+        <input type="password" id="adminPassword" placeholder="Senha">
+        <button onclick="loginAdmin()">Entrar</button>
+
+        <div id="adminContent" style="display:none;">
+            <h3>Adicionar Produto</h3>
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="desc" placeholder="Descrição">
+            <input type="number" id="preco" placeholder="Preço">
+            <input type="text" id="img" placeholder="Link da Imagem">
+            <input type="text" id="link" placeholder="Link do Produto">
+            <button onclick="addProduto()">Adicionar</button>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
